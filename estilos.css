@@ -1,0 +1,72 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: Georgia, serif;
+    margin: 30px auto;
+    width: 80%;
+}
+
+#titulo-principal {
+    color: #cc0000;
+    font-family: Impact, sans-serif;
+    font-size: 42px;
+    text-align: center;
+    border-bottom: 2px solid #cc0000;
+    padding-bottom: 10px;
+}
+
+.seccao-texto {
+    background-color: #2b2b2b;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid #cc0000;
+}
+
+p.destaque {
+    background-color: #382424;
+    font-style: italic;
+    padding: 10px;
+}
+
+a[target="_blank"] {
+    color: #ff4d4d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a[target="_blank"]:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.media-container img {
+    border: 3px solid #cc0000;
+    display: block;
+    margin: 10px 0;
+}
+
+ul.lista-mecanicas {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-mecanica {
+    background-color: #242424;
+    border: 1px solid #444;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.card-mecanica h2 {
+    color: #ff4d4d;
+    margin-top: 0;
+}
+
+/* Quando dava width: 100%, ou simplesmemente um valor fixo a um elemento e depois adicionava padding, para o texto não ficar colado ás margens da caixa, o navegador somava esses valores, o que fazia com que a caixa ficasse com mais de 100% da largura da página, então era necessãrio utilizar a barra de deslocação com o mouse para ler a informação toda. Para resolver o problema adicionei box sizing: border-box, o que forçou o navegador a incluir a border, Se o padding que defini dentro da largura total definida.*/
+/* O erro que detetei durante os meus testes no browser e me obrigou a regressar ao Notepad++, foi o facto de ao aplicar margin auto: mas não definir uma largura, o site ficava colado à esquerda.*/
+/* No meu código, href foi utilizado na tag de hiperligação definir o URL para onde o utlizador será redirecionado ao clicar no link do texto, neste caso para o site oficial da Rockstar Games*/
+
